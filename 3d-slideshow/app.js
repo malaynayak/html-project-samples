@@ -35,11 +35,17 @@ const changePlayPause = () => {
 document.querySelector('.left-arrow').addEventListener('click', () => {
     x+= 90;
     rotate();
+    if (bool){
+        playPause();
+    }
 });
 
 document.querySelector('.right-arrow').addEventListener('click', () => {
     x -= 90;
     rotate();
+    if (bool){
+        playPause();
+    }
 });
 
 document.querySelector('.left-arrow').addEventListener('mouseover', () => {
