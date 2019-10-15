@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$app-bg: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.8)), url('images/bg.jpg') no-repeat;
+
+// Colors
+$color-primary: #fff;
+$color-dark: #111;
+$color-bg: #000;
+
+$color-slider-control: rgba(59, 52, 50, .7);
+$color-slider-control-light:rgba(42, 38, 36, .8);
