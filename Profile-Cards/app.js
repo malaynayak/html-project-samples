@@ -1,12 +1,8 @@
-const heading = 'Please Meet Our Team';
-let i = 0;
+import Typing from './app/js/Typing';
 
-const typing = () => {
-    if (i < heading.length) {
-        document.querySelector('.heading').innerHTML += heading.charAt(i);
-        i++;
-        setTimeout(typing, 150);
-    }
-}
+// Initiate Typing Effect
+let typing = new Typing();
+typing.initTyping();
 
-typing();
+import './app/scss/main.scss';
+ 

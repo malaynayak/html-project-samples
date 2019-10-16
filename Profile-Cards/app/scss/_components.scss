@@ -1,0 +1,116 @@
+.heading {
+    color: $color-primary;
+    font-size: 70px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    white-space: pre-wrap;
+    &::after {
+        content: '';
+        width: 5px;
+        height: 55px;
+        background-color: $color-primary;
+        position: absolute;
+        animation: blinking 1s  backwards infinite;
+    }
+}
+.card {
+    width: 280px;
+    background: $color-light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: transform .5s;
+    &:hover{
+        transform: scale(1.1);
+        button {
+            animation: buttonRotation 2s 1s linear;
+        }
+    }
+    // &:nth-child(1){
+    //     animation: cardAnim 2s 3s backwards;
+    // }
+    // &:nth-child(2){
+    //     animation: cardAnim 2s 3.5s backwards;
+    // }
+    // &:nth-child(3){
+    //     animation: cardAnim 2s 4s backwards;
+    // }
+    h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size:  22px;
+        color: #555;
+        margin: 10px;
+    }
+    .image-top {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+    }
+    ul.social-icons {
+        width: 150px;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 10px 0 20px 0;
+        border-top: 1px solid #999;
+        padding-top: 20px;
+        i {
+            font-size: 18px;
+        }
+    }
+    .profile-image  {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: -110px;
+        z-index: 10;
+        border: 10px solid $color-light;
+    }
+    .job {
+        font-family: 'Montserrat', sans-serif;
+        color: #777;
+        font-weight: 300;
+    }
+    .about-me {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 14px;
+        width: 90%;
+        margin: 15px 0;
+        font-style: italic;
+        color: #444;
+        text-align: center;
+    }
+}
+
+button {
+    width: 120px;
+    padding: 7px;
+    margin: 10px 0;
+    background-color: tomato;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: $color-light;
+    box-shadow: 5px 5px 20px  rgba(0,0,0, .4);
+    cursor: pointer;
+}
+
+.fa-youtube {
+    color: #cd201f;
+}
+.fa-twitter {
+    color: #55acee;
+}
+.fa-google-plus-g {
+    color: #dd4d39;
+}
