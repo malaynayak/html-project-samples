@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$background: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url('/images/bg2.jpeg') center no-repeat;
+
+$color-primary : #fff;
+$color-orange : #cc683c;
+$color-dark-bg: #232328;
+$color-dark: #262626;
+$color-light-bg: #eee;
+$color-input: #aaa;
+
+@keyframes anim {
+    0% { transform: translateY(0)}
+    20% { transform: translateY(0)}
+    40% { transform: translateY(-30px)}
+    50% { transform: translateY(0)}
+    60% { transform: translateY(-15px)}
+    80% { transform: translateY(0)}
+    100% { transform: translateY(0)}
+}
