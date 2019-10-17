@@ -117,8 +117,8 @@ function watchFiles() {
   
 // define complex tasks
 const js = gulp.series(scriptsLint, scripts);
-const build = gulp.series(gulp.parallel(styles, images, js, pages));
-const watch = gulp.parallel(watchFiles, browserSync);
+const build = gulp.series(clean, gulp.parallel(styles, images, js, pages));
+const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 
 // export tasks
 exports.pages = pages;
