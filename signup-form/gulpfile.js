@@ -83,7 +83,7 @@ function scripts() {
         .pipe(babel({
             presets: ['@babel/env']
         }))
-       // .pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest(paths.scripts.dest))
         .pipe(browsersync.stream());
 };
